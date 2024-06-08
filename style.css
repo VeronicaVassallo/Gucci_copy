@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*Header*/
 
@@ -11,13 +12,24 @@
 #logo {
 	color: white;
 	top: 0%;
-	right: 3%;
-	font-size: 170pt;
-	letter-spacing: 70px;
+	right: 0%;
+	font-size: 200pt;
+	letter-spacing: 100px;
 	opacity: 0.8;
-	font-family: "Times New Roman", Times, sans-serif;
+	position: fixed;
+	font-family: "Garamond";
+	z-index: 1050;
+}
+.logoAnimation {
 	animation-name: animationLogo;
-	animation-duration: 4s;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+}
+
+.logoAnimationReverse {
+	animation-name: animationLogoReverse;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
 }
 .bg-white {
 	background-color: white !important;
@@ -27,21 +39,47 @@
 	height: 110vh;
 	background-image: url("assets/header.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 }
-
+.menu {
+	margin-right: 120px;
+	font-size: 8pt;
+	padding-top: 2px;
+}
 /*Aniamtion Logo*/
 /* The animation code */
 @keyframes animationLogo {
 	0% {
-		background-color: red;
+		color: white;
+		font-size: 200pt;
+		letter-spacing: 100px;
+		top: 0%;
+		right: 0%;
 	}
-	25% {
-		background-color: yellow;
-	}
-	50% {
-		background-color: blue;
-	}
+
 	100% {
-		background-color: green;
+		color: black;
+		font-size: 20pt;
+		letter-spacing: 10px;
+		top: 2%;
+		right: 50%;
+	}
+}
+
+@keyframes animationLogoReverse {
+	0% {
+		color: black;
+		font-size: 20pt;
+		letter-spacing: 10px;
+		top: 2%;
+		right: 50%;
+	}
+
+	100% {
+		color: white;
+		font-size: 200pt;
+		letter-spacing: 100px;
+		top: 0%;
+		right: 0%;
 	}
 }
