@@ -4,10 +4,13 @@
 	padding: 0;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /*Header*/
 
 #nav {
 	width: 100vw;
+	top: 0px;
+	z-index: 1051;
 }
 #logo {
 	color: white;
@@ -18,7 +21,7 @@
 	opacity: 0.8;
 	position: fixed;
 	font-family: "Garamond";
-	z-index: 1050;
+	z-index: 1052;
 }
 .logoAnimation {
 	animation-name: animationLogo;
@@ -33,6 +36,18 @@
 }
 .bg-white {
 	background-color: white !important;
+	animation: opacityBG 2s ease-in forwards;
+}
+
+@keyframes opacityBG {
+	0% {
+		opacity: 0;
+		padding-bottom: 10px;
+	}
+	100% {
+		opacity: 9;
+		padding-bottom: 0px;
+	}
 }
 .gucci_header {
 	width: 100%;
@@ -57,25 +72,25 @@
 }
 
 .buttonHeaderBorse {
+	position: sticky;
+	z-index: 1050;
 	text-align: center;
-	top: 80vh;
-	right: 38%;
 	cursor: pointer;
+	top: 70%;
+	right: 38%;
 }
+
 #borseHeader {
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 	animation: showButton 0.5s ease-in forwards;
-	position: sticky;
-	top: -65%;
-	right: 35%;
-	z-index: 3;
 }
 /*button Esplora la collezione*/
 #buttonExploreCollection {
 	font-size: small;
 	font-weight: bold;
 	width: 20em;
-	padding: 5%;
+	margin-left: 40%;
+	padding: 1%;
 	border-radius: 2px;
 	animation: showButton 1s ease-out 1ms forwards;
 	transform: translateY(-25px);
@@ -156,7 +171,7 @@
 .buttonSectionMWContainer {
 	position: relative;
 	top: -47px;
-	width: 39%;
+	width: 43%;
 	height: 3em;
 	padding: 10px;
 	background-color: rgba(0, 0, 0, 0.15);
@@ -190,8 +205,113 @@ section:nth-child(3) h2 {
 
 figure {
 	width: 30%;
+	text-align: center;
+}
+figcaption h5 {
+	font-size: 12pt;
+	font-weight: 600;
 }
 video {
 	width: 100%;
-	margin: 5px;
+}
+
+/*Footer*/
+footer {
+	background-color: black;
+	overflow: hidden;
+	font-size: 9pt;
+}
+
+footer ul li {
+	list-style: none;
+	padding: 15px;
+}
+hr {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-weight: bolder;
+}
+
+.logoFooter {
+	width: 100px;
+	padding-left: 2%;
+}
+
+#gucciFooter {
+	font-size: 180pt;
+	letter-spacing: 90px;
+	font-family: "Garamond";
+	text-align: center;
+}
+
+/*Message balloon*/
+.message {
+	width: 100px;
+	height: 100px;
+	z-index: 1060;
+	position: fixed;
+	opacity: 0;
+	top: 80vh;
+	right: 0vh;
+	animation: showBalloon 1s ease-in 3s forwards;
+}
+
+.circle {
+	width: 70px;
+	height: 70px;
+	background-color: #1b1b1b;
+	border-radius: 50%;
+	box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+}
+.triangle-top-right {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 20px 20px 0;
+	border-color: transparent #1b1b1b transparent transparent;
+	transform: translate(45px, -15px) rotate(-20deg);
+}
+
+@keyframes showBalloon {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	50% {
+		opacity: 12;
+		transform: translateX(-4px);
+	}
+	75% {
+		opacity: 12;
+		transform: translateX(5px);
+	}
+	100% {
+		opacity: 12;
+		transform: translateX(0);
+	}
+}
+
+#slide1 {
+	position: relative;
+	right: 20px;
+	top: 17px;
+	opacity: 9;
+	animation: moveToLeft 10s ease 2ms infinite;
+}
+#slide2 {
+	position: relative;
+	right: 85px;
+	top: 15px;
+	opacity: 0;
+	animation: moveToLeftCC 5s ease 1ms infinite;
+}
+
+@keyframes moveToLeft {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 9;
+	}
 }
