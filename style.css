@@ -40,11 +40,63 @@
 	background-image: url("assets/header.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	animation: dezoom 2s ease forwards;
+}
+
+@keyframes dezoom {
+	0% {
+		background-size: 120%;
+	}
+	100% {
+		background-size: 100%;
+	}
 }
 
 #contact {
 	font-size: small;
 }
+
+.buttonHeaderBorse {
+	text-align: center;
+	top: 80vh;
+	right: 38%;
+	cursor: pointer;
+}
+#borseHeader {
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	animation: showButton 0.5s ease-in forwards;
+	position: sticky;
+	top: -65%;
+	right: 35%;
+	z-index: 3;
+}
+/*button Esplora la collezione*/
+#buttonExploreCollection {
+	font-size: small;
+	font-weight: bold;
+	width: 20em;
+	padding: 5%;
+	border-radius: 2px;
+	animation: showButton 1s ease-out 1ms forwards;
+	transform: translateY(-25px);
+}
+
+@keyframes showButton {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100% {
+		opacity: 12;
+		transform: translateY(-25px);
+	}
+}
+
+.buttonHeaderBorse #borseHeader + div:hover {
+	padding: 11px;
+	width: 19em;
+}
+
 .menu {
 	margin-right: 120px;
 	font-size: 8pt;
@@ -103,8 +155,8 @@
 
 .buttonSectionMWContainer {
 	position: relative;
-	top: -45px;
-	width: 43%;
+	top: -47px;
+	width: 39%;
 	height: 3em;
 	padding: 10px;
 	background-color: rgba(0, 0, 0, 0.15);
@@ -124,4 +176,22 @@
 .containerRestoNiente img {
 	width: 100%;
 	object-fit: cover;
+}
+.fontSize {
+	width: 75%;
+	font-size: 12pt;
+}
+
+/*section video*/
+section:nth-child(3) h2 {
+	margin-top: 10%;
+	font-size: 35pt;
+}
+
+figure {
+	width: 30%;
+}
+video {
+	width: 100%;
+	margin: 5px;
 }
