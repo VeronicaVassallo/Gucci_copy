@@ -328,6 +328,12 @@ hr {
 	animation: moveToLeftCC 5s ease 1ms infinite;
 }
 
+.cursor:hover {
+	position: relative !important;
+	cursor: pointer;
+	z-index: 1059;
+}
+
 @keyframes moveToLeft {
 	0% {
 		opacity: 0;
@@ -366,13 +372,24 @@ hr {
 
 	.cardMW {
 		width: 100% !important;
-	}
-	.cardMW {
-		width: 100% !important;
 		height: 30em !important;
 	}
 
 	.containerSectionFirst {
-		transform: translateY(-200px);
+		transform: translateY(-150px);
+	}
+
+	.featured {
+		transform: translateY(80px);
+		padding-bottom: 6%;
+	}
+	.containerRestoNiente {
+		width: 100% !important;
+		margin: 10px !important;
+	}
+
+	#gucciFooter {
+		font-size: 80pt;
+		letter-spacing: 15px;
 	}
 }
