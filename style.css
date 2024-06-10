@@ -73,6 +73,7 @@
 		left: 10%;
 	}
 }
+
 .bg-white {
 	background-color: white !important;
 	animation: opacityBG 2s ease-in forwards;
@@ -333,5 +334,45 @@ hr {
 	}
 	100% {
 		opacity: 9;
+	}
+}
+
+/*media query mobile version*/
+@media screen and (max-width: 576px) {
+	#logo {
+		transform: scale(38%);
+		letter-spacing: 5px;
+		top: -5% !important;
+		left: -78vw !important;
+	}
+
+	.gucci_header {
+		background-size: cover !important;
+		background-position: center;
+		background-color: blueviolet;
+	}
+
+	#containerIconsMenu {
+		width: 50%;
+	}
+	.buttonHeaderBorse #borseHeader + div {
+		transform: translateX(-30%) translateY(-20px) !important;
+	}
+
+	#sectionMW {
+		display: flex !important;
+		flex-direction: column;
+	}
+
+	.cardMW {
+		width: 100% !important;
+	}
+	.cardMW {
+		width: 100% !important;
+		height: 30em !important;
+	}
+
+	.containerSectionFirst {
+		transform: translateY(-200px);
 	}
 }
