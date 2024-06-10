@@ -94,31 +94,35 @@
 			</nav>
 		</header>
 		<main>
-			<section>
-				<div class="d-flex justify-content-around mt-3 text-light">
-					<div class="w-50 section-ContainerMW mx-3">
-						<img class="w-100" src="assets/section1-2.jpg" alt="img_uomo" />
+			<section class="Container-fluid">
+				<div class="row mt-3 text-light gx-2">
+					<div class="cardMW d-flex flex-column col-6">
+						<div class="w-100 section-ContainerMW">
+							<img class="w-100" src="assets/section1-2.jpg" alt="img_uomo" />
+						</div>
 						<div
-							class="titleSectionM d-flex flex-column align-items-center position-relative"
+							class="containerSectionFirst d-flex flex-column align-items-center"
 						>
-							<h4>Pre-Fall 2024</h4>
-							
-							<div class="buttonSectionMW">ESPLORA LA COLLEZIONE UOMO</div>
-							<div class="buttonSectionMWContainer">
+							<div class="stickycontainer">
+								<h4>Pre-Fall 2024</h4>
+								<div class="buttonSectionMW">ESPLORA LA COLLEZIONE UOMO</div>
+								<div class="buttonSectionMWContainer"></div>
 							</div>
 						</div>
 					</div>
-					<div class="w-50 section-ContainerMW me-3">
-						<img class="w-100" src="assets/section1-4.jpg" alt="img_donna" />
+
+					<div class="cardMW d-flex flex-column col-6">
+						<div class="w-100 section-ContainerMW">
+							<img class="w-100" src="assets/section1-2.jpg" alt="img_uomo" />
+						</div>
 						<div
-							class="titleSectionW d-flex flex-column align-items-center position-relative"
+							class="containerSectionFirst d-flex flex-column align-items-center"
 						>
-							<h4>Pre-Fall 2024</h4></b>
-							<div class="buttonSectionMW">ESPLORA LA COLLEZIONE DONNA</div>
-							<div class="buttonSectionMWContainer">
-							
+							<div class="stickycontainer">
+								<h4>Pre-Fall 2024</h4>
+								<div class="buttonSectionMW">ESPLORA LA COLLEZIONE UOMO</div>
+								<div class="buttonSectionMWContainer"></div>
 							</div>
-							
 						</div>
 					</div>
 				</div>
@@ -127,14 +131,18 @@
 				</div>
 			</section>
 			<section class="d-flex align-items-center justify-content-around">
-				<div class="w-50 containerRestoNiente mx-5"><img src="assets/restoNienteI.jpg" alt="img_ilRestoNiente" /></div>
+				<div class="w-50 containerRestoNiente mx-5">
+					<img src="assets/restoNienteI.jpg" alt="img_ilRestoNiente" />
+				</div>
 				<div class="w-50 text-center d-flex flex-column align-items-center">
 					<h2 class="pb-5">IL RESTO DI NIENTE</h2>
 					<p class="fontSize">
 						Una nuova mostra al Museo Madre esplora la relazione tra
 						architettura ed esperienze emotive.
 					</p>
-					<div><a class="text-dark d-block pt-5" href="#">SCOPRI DI PIU'</a></div>
+					<div>
+						<a class="text-dark d-block pt-5" href="#">SCOPRI DI PIU'</a>
+					</div>
 				</div>
 			</section>
 			<section>
@@ -142,9 +150,13 @@
 				<div class="d-flex justify-content-around">
 					<figure>
 						<div>
-						<video autoplay muted>
-							<source src="assets/DIOR Fashion Film 2022 _ Directed by VIVIENNE & TAMAS.mp4" type="video/mp4">
-						</video></div>
+							<video autoplay muted>
+								<source
+									src="assets/DIOR Fashion Film 2022 _ Directed by VIVIENNE & TAMAS.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
 						<figcaption>
 							<h5>PACKAGING</h5>
 							<p>
@@ -157,9 +169,13 @@
 					</figure>
 					<figure>
 						<div>
-						<video autoplay muted>
-							<source src="assets/DIOR Fashion Film 2022 _ Directed by VIVIENNE & TAMAS.mp4" type="video/mp4">
-						</video></div>
+							<video autoplay muted>
+								<source
+									src="assets/DIOR Fashion Film 2022 _ Directed by VIVIENNE & TAMAS.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
 						<figcaption>
 							<h5>PACKAGING</h5>
 							<p>
@@ -172,9 +188,13 @@
 					</figure>
 					<figure>
 						<div>
-						<video autoplay muted>
-							<source src="assets/DIOR Fashion Film 2022 _ Directed by VIVIENNE & TAMAS.mp4" type="video/mp4">
-						</video></div>
+							<video autoplay muted>
+								<source
+									src="assets/DIOR Fashion Film 2022 _ Directed by VIVIENNE & TAMAS.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
 						<figcaption>
 							<h5>PACKAGING</h5>
 							<p>
@@ -192,38 +212,39 @@
 			<div class="row">
 				<div class="d-flex flex-md-row flex-sm-column">
 					<div class="col-3 listFooter ms-5">
-						
 						<ul>
 							<li><p class="text-secondary pt-5">POSSIAMO AIUTARTI</p></li>
 							<li><a class="text-light" href="#">Contattaci</a></li>
-							<li><a class="text-light"  href="#">Il mio ordine</a></li>
-							<li><a class="text-light"  href="#">Domande frequenti</a></li>
-							<li><a class="text-light"  href="#">Disiscrizione Newsletter</a></li>
-							<li><a class="text-light"  href="#">Mappa del sito</a></li>
-							<li><a class="text-light"  href="#">Garanzia Legale</a></li>
-							<li><a class="text-light"  href="#">Diritto di recesso</a></li>
+							<li><a class="text-light" href="#">Il mio ordine</a></li>
+							<li><a class="text-light" href="#">Domande frequenti</a></li>
+							<li>
+								<a class="text-light" href="#">Disiscrizione Newsletter</a>
+							</li>
+							<li><a class="text-light" href="#">Mappa del sito</a></li>
+							<li><a class="text-light" href="#">Garanzia Legale</a></li>
+							<li><a class="text-light" href="#">Diritto di recesso</a></li>
 						</ul>
-						
+
 						<ul>
 							<li><p class="text-secondary pt-3">RICERCA NEGOZIO</p></li>
-							<li><a class="text-light"  href="#">Mappa del sito</a></li>
-							<li><a class="text-light"  href="#">Garanzia Legale</a></li>
-							<li><a class="text-light"  href="#">Diritto di recesso</a></li>
+							<li><a class="text-light" href="#">Mappa del sito</a></li>
+							<li><a class="text-light" href="#">Garanzia Legale</a></li>
+							<li><a class="text-light" href="#">Diritto di recesso</a></li>
 						</ul>
 					</div>
 					<div class="col-4 listFooter">
-						
-							<ul>
-								<li><p class="text-secondary pt-5">POSSIAMO AIUTARTI</p></li>
-								<li><a class="text-light" href="#">Contattaci</a></li>
-								<li><a class="text-light"  href="#">Il mio ordine</a></li>
-								<li><a class="text-light"  href="#">Domande frequenti</a></li>
-								<li><a class="text-light"  href="#">Disiscrizione Newsletter</a></li>
-								<li><a class="text-light"  href="#">Mappa del sito</a></li>
-								<li><a class="text-light"  href="#">Garanzia Legale</a></li>
-								<li><a class="text-light"  href="#">Diritto di recesso</a></li>
-							</ul>
-						
+						<ul>
+							<li><p class="text-secondary pt-5">POSSIAMO AIUTARTI</p></li>
+							<li><a class="text-light" href="#">Contattaci</a></li>
+							<li><a class="text-light" href="#">Il mio ordine</a></li>
+							<li><a class="text-light" href="#">Domande frequenti</a></li>
+							<li>
+								<a class="text-light" href="#">Disiscrizione Newsletter</a>
+							</li>
+							<li><a class="text-light" href="#">Mappa del sito</a></li>
+							<li><a class="text-light" href="#">Garanzia Legale</a></li>
+							<li><a class="text-light" href="#">Diritto di recesso</a></li>
+						</ul>
 					</div>
 					<div class="col-4 my-5">
 						<p class="text-secondary pt-3">RICERCA NEGOZIO</p>
@@ -231,13 +252,18 @@
 							<div class="pt-3 pb-3">Paese/Regione/Città</div>
 							<p class="pt-3 pb-3">></p>
 						</div>
-						<hr/>
+						<hr />
 						<div>
-							<p class="text-secondary pt-3">REGISTRATI PER RICEVERE AGGIORNAMENTI SU GUCCI</p>
-							Inserendo il tuo indirizzo e-mail, acconsenti a ricevere le newsletter
-							Gucci relative alle ultime collezioni, agli eventi e alle campagne del
-							brand. Per maggiori informazioni consulta la nostra
-							<a class="text-light" href="#">Informativa a tutela della privacy </a>.
+							<p class="text-secondary pt-3">
+								REGISTRATI PER RICEVERE AGGIORNAMENTI SU GUCCI
+							</p>
+							Inserendo il tuo indirizzo e-mail, acconsenti a ricevere le
+							newsletter Gucci relative alle ultime collezioni, agli eventi e
+							alle campagne del brand. Per maggiori informazioni consulta la
+							nostra
+							<a class="text-light" href="#"
+								>Informativa a tutela della privacy </a
+							>.
 						</div>
 						<div class="d-flex justify-content-between align-items-center pt-3">
 							<div class="pt-3 pb-3">Indirizzo Mail</div>
@@ -245,19 +271,26 @@
 						</div>
 						<hr />
 						<p class="text-secondary pt-3">LINGUA</p>
-						<p><a class="text-light" href="#">ITALIANO</a> </p>
+						<p><a class="text-light" href="#">ITALIANO</a></p>
 						<p class="text-secondary pt-3">PAESE/REGIONE</p>
-						<p><a class="text-light" href="#">ITALIA</a> </p>
+						<p><a class="text-light" href="#">ITALIA</a></p>
 					</div>
 				</div>
-				
 			</div>
-			
+
 			<div class="d-flex ps-5 mt-5">
-				<div class="logoFooter" ><img class="w-100" src="assets/pngLogo.png" alt="logo_Gucci"></div>
-				<div class="logoFooter" ><img class="w-100" src="assets/pngLogo.png" alt="logo_Gucci"></div>
-				<div class="logoFooter" ><img class="w-100" src="assets/pngLogo.png" alt="logo_Gucci"></div>
-				<div class="logoFooter" ><img class="w-100" src="assets/pngLogo.png" alt="logo_Gucci"></div>
+				<div class="logoFooter">
+					<img class="w-100" src="assets/pngLogo.png" alt="logo_Gucci" />
+				</div>
+				<div class="logoFooter">
+					<img class="w-100" src="assets/pngLogo.png" alt="logo_Gucci" />
+				</div>
+				<div class="logoFooter">
+					<img class="w-100" src="assets/pngLogo.png" alt="logo_Gucci" />
+				</div>
+				<div class="logoFooter">
+					<img class="w-100" src="assets/pngLogo.png" alt="logo_Gucci" />
+				</div>
 			</div>
 			<p class="ps-5 pt-5 ms-4 mb-0">
 				© 2016 - 2021 Guccio Gucci S.p.A. - Tutti i Diritti Riservati. G
@@ -271,9 +304,18 @@
 			<div class="circle d-flex">
 				<div id="slide1" class="text-center text-light mx-5">...</div>
 				<div id="slide2" class="text-center text-light">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cc-circle" viewBox="0 0 16 16">
-						<path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.408 5.89c-.83 0-1.318.64-1.318 1.753v.742c0 1.108.479 1.727 1.318 1.727.69 0 1.138-.435 1.187-1.05h1.147v.114c-.058 1.147-1.029 1.938-2.343 1.938-1.612 0-2.518-1.028-2.518-2.729v-.747c0-1.7.914-2.75 2.518-2.75 1.319 0 2.29.812 2.343 1.999v.11H6.595c-.049-.638-.506-1.108-1.187-1.108Zm5.404 0c-.831 0-1.319.64-1.319 1.753v.742c0 1.108.48 1.727 1.319 1.727.69 0 1.138-.435 1.186-1.05h1.147v.114c-.057 1.147-1.028 1.938-2.342 1.938-1.613 0-2.518-1.028-2.518-2.729v-.747c0-1.7.914-2.75 2.518-2.75 1.318 0 2.29.812 2.342 1.999v.11h-1.147c-.048-.638-.505-1.108-1.186-1.108Z"/>
-					  </svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="currentColor"
+						class="bi bi-cc-circle"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.408 5.89c-.83 0-1.318.64-1.318 1.753v.742c0 1.108.479 1.727 1.318 1.727.69 0 1.138-.435 1.187-1.05h1.147v.114c-.058 1.147-1.029 1.938-2.343 1.938-1.612 0-2.518-1.028-2.518-2.729v-.747c0-1.7.914-2.75 2.518-2.75 1.319 0 2.29.812 2.343 1.999v.11H6.595c-.049-.638-.506-1.108-1.187-1.108Zm5.404 0c-.831 0-1.319.64-1.319 1.753v.742c0 1.108.48 1.727 1.319 1.727.69 0 1.138-.435 1.186-1.05h1.147v.114c-.057 1.147-1.028 1.938-2.342 1.938-1.613 0-2.518-1.028-2.518-2.729v-.747c0-1.7.914-2.75 2.518-2.75 1.318 0 2.29.812 2.342 1.999v.11h-1.147c-.048-.638-.505-1.108-1.186-1.108Z"
+						/>
+					</svg>
 				</div>
 			</div>
 			<div class="triangle-top-right"></div>

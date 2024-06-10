@@ -89,7 +89,7 @@
 	font-size: small;
 	font-weight: bold;
 	width: 20em;
-	margin-left: 40%;
+	margin-left: 41%;
 	padding: 1%;
 	border-radius: 2px;
 	animation: showButton 1s ease-out 1ms forwards;
@@ -155,23 +155,41 @@
 	}
 }
 
-/*first section*/
+/*first section men and women*/
+
+/*Conatainer card img*/
 .section-ContainerMW {
-	height: 110vh;
+	cursor: pointer;
+	height: 100vh;
 	overflow: hidden;
 }
 
-.titleSectionM {
-	top: -35vh;
-}
-.titleSectionW {
-	top: -35vh;
+.cardMW {
+	width: 48%;
+	margin-left: 1%;
 }
 
+/*container stycky elements*/
+.containerSectionFirst {
+	height: 30%;
+	position: relative;
+	top: -30%;
+}
+
+.stickycontainer {
+	position: sticky;
+	z-index: 1050;
+	top: 20%;
+}
+.stickycontainer h4 {
+	text-align: center;
+	padding-bottom: 2%;
+}
 .buttonSectionMWContainer {
 	position: relative;
-	top: -47px;
-	width: 43%;
+	z-index: 1048;
+	transform: translateY(-3em);
+	width: 100%;
 	height: 3em;
 	padding: 10px;
 	background-color: rgba(0, 0, 0, 0.15);
@@ -181,10 +199,10 @@
 }
 
 .buttonSectionMW {
+	position: relative;
+	z-index: 1049;
 	padding: 10px;
 	border: 1px solid white;
-	position: relative;
-	z-index: 3;
 }
 
 /*seciton museum*/
