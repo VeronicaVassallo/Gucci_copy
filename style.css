@@ -249,6 +249,16 @@ footer {
 	overflow: hidden;
 	font-size: 9pt;
 }
+.flex-size:first-of-type {
+	width: 25% !important;
+}
+.flex-size:nth-child(2) {
+	width: 25% !important;
+}
+.flex-size:last-of-type {
+	width: 50%;
+	padding-right: 5%;
+}
 
 footer ul li {
 	list-style: none;
@@ -466,6 +476,10 @@ hr {
 
 	footer .listFooter {
 		display: none;
+	}
+
+	.flex-size:last-of-type {
+		width: 100% !important;
 	}
 	.containerBrands {
 		padding-left: 10px !important;
