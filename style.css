@@ -278,6 +278,7 @@ hr {
 	top: 80vh;
 	right: 0vh;
 	animation: showBalloon 1s ease-in 3s forwards;
+	cursor: pointer;
 }
 
 .circle {
@@ -349,16 +350,30 @@ hr {
 /*media query mobile version*/
 @media screen and (max-width: 576px) {
 	#logo {
-		transform: scale(38%);
-		letter-spacing: 5px;
+		transform: scale(45%);
+		letter-spacing: 35px;
 		top: -5% !important;
-		left: -78vw !important;
+		left: -50vw !important;
+	}
+	#contact {
+		visibility: hidden !important;
+	}
+
+	.logoAnimation {
+		animation-name: animationLogoForMobile;
+		animation-duration: 0.7s;
+		animation-fill-mode: forwards;
+	}
+
+	.logoAnimationReverse {
+		animation-name: animationLogoReverseForMobile;
+		animation-duration: 0.7s;
+		animation-fill-mode: forwards;
 	}
 
 	.gucci_header {
 		background-size: cover !important;
 		background-position: center;
-		background-color: blueviolet;
 	}
 
 	#containerIconsMenu {
@@ -436,5 +451,33 @@ hr {
 	#gucciFooter {
 		font-size: 80pt;
 		letter-spacing: 15px;
+	}
+}
+
+/*Animation logo mobile*/
+@keyframes animationLogoForMobile {
+	0% {
+		color: white;
+		transform: scale(45%);
+		letter-spacing: 35px;
+		top: -5% !important;
+		left: -50vw !important;
+	}
+	100% {
+		color: black;
+		transform: scale(14%) translateY(-220%) translateX(-80%);
+		letter-spacing: 15px;
+	}
+}
+
+@keyframes logoAnimationReverseoForMobile {
+	0% {
+		color: black;
+		transform: scale(14%) translateY(-220%) translateX(-80%);
+		letter-spacing: 15px;
+	}
+	100% {
+		color: white;
+		font-size: 200pt;
 	}
 }
