@@ -217,6 +217,9 @@
 	width: 75%;
 	font-size: 12pt;
 }
+.fs-8 {
+	font-size: small;
+}
 
 /*section video*/
 section:nth-child(3) h2 {
@@ -386,6 +389,48 @@ hr {
 	.containerRestoNiente {
 		width: 100% !important;
 		margin: 10px !important;
+	}
+	.containerRestoNienteText {
+		width: 100% !important;
+		padding-top: 8% !important;
+	}
+	.containerRestoNienteText p {
+		width: 100%;
+		padding: 0px 13px;
+	}
+	#containerVideos {
+		width: 300vw !important;
+		overflow: hidden;
+	}
+	section:last-of-type {
+		width: 100vw !important;
+		overflow: hidden;
+		padding-left: 0px !important;
+		/*border: solid 5px rgb(85, 165, 0);*/
+	}
+
+	figure {
+		/*border: solid 2px rgb(234, 0, 255);*/
+		width: 70vw !important;
+		margin-right: 0px !important;
+	}
+
+	figure:first-of-type {
+		transform: translateX(-50px);
+	}
+
+	figure:nth-child(2) {
+		transform: translateX(-180px);
+	}
+	figure video {
+		width: 100% !important;
+		height: 60vh !important;
+		object-fit: cover;
+	}
+	figcaption {
+		text-align: left;
+		width: 90%;
+		/*	background-color: pink;*/
 	}
 
 	#gucciFooter {
