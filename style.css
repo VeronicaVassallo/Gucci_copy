@@ -467,6 +467,9 @@ hr {
 	footer .listFooter {
 		display: none;
 	}
+	.containerBrands {
+		padding-left: 10px !important;
+	}
 
 	#gucciFooter {
 		font-size: 80pt;
