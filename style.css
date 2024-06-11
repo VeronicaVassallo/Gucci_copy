@@ -1,3 +1,7 @@
+:root {
+	--bg-footer: black;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -255,6 +259,18 @@ hr {
 	padding-top: 0px;
 	font-weight: bolder;
 }
+/*collapsed section start */
+.bg-footer {
+	background-color: var(--bg-footer);
+}
+.buttonCollapse {
+	border-bottom: solid 1px white;
+	padding-bottom: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*collapsed section end */
 
 .logoFooter {
 	width: 100px;
@@ -446,6 +462,10 @@ hr {
 		text-align: left;
 		width: 90%;
 		/*	background-color: pink;*/
+	}
+
+	footer .listFooter {
+		display: none;
 	}
 
 	#gucciFooter {
