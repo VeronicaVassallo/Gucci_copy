@@ -1,8 +1,3 @@
-:root {
-	--colorTheme1: white;
-	--colorTheme2: black;
-}
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -15,11 +10,11 @@
 #nav {
 	width: 100vw;
 	top: 0px;
-	z-index: 1053;
+	z-index: 1051;
 }
 #logo {
-	color: var(--colorTheme1);
-	font-size: 200pt;
+	color: white;
+	font-size: 180pt;
 	letter-spacing: 90px;
 	transform: scaleX(115%);
 	opacity: 0.8;
@@ -45,15 +40,15 @@
 /* The animation code */
 @keyframes animationLogo {
 	0% {
-		color: var(--colorTheme1);
-		font-size: 200pt;
+		color: white;
+		font-size: 180pt;
 		letter-spacing: 90px;
 		top: 0%;
 		left: 10%;
 	}
 
 	100% {
-		color: var(--colorTheme2);
+		color: black;
 		font-size: 20pt;
 		letter-spacing: 10px;
 		top: 2%;
@@ -63,7 +58,7 @@
 
 @keyframes animationLogoReverse {
 	0% {
-		color: var(--colorTheme2);
+		color: black;
 		font-size: 20pt;
 		letter-spacing: 10px;
 		top: 2%;
@@ -71,8 +66,8 @@
 	}
 
 	100% {
-		color: var(--colorTheme1);
-		font-size: 200pt;
+		color: white;
+		font-size: 180pt;
 		letter-spacing: 90px;
 		top: 0%;
 		left: 10%;
@@ -80,7 +75,7 @@
 }
 
 .bg-white {
-	background-color: var(--colorTheme1) !important;
+	background-color: white !important;
 	animation: opacityBG 2s ease-in forwards;
 }
 
@@ -246,7 +241,7 @@ video {
 
 /*Footer*/
 footer {
-	background-color: var(--colorTheme2);
+	background-color: black;
 	overflow: hidden;
 	font-size: 9pt;
 }
@@ -272,10 +267,10 @@ hr {
 }
 /*collapsed section start */
 .bg-footer {
-	background-color: var(--colorTheme2);
+	background-color: black;
 }
 .buttonCollapse {
-	border-bottom: solid 1px var(--colorTheme1);
+	border-bottom: solid 1px white;
 	padding-bottom: 20px;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -377,10 +372,13 @@ hr {
 /*media query mobile version*/
 @media screen and (max-width: 576px) {
 	#logo {
-		transform: scale(45%);
+		transform: scale(40%);
 		letter-spacing: 35px;
-		top: -5% !important;
-		left: -50vw !important;
+		top: -3% !important;
+		left: -68% !important;
+	}
+	.menu {
+		display: none;
 	}
 	#contact {
 		visibility: hidden !important;
@@ -399,6 +397,7 @@ hr {
 	}
 
 	.gucci_header {
+		height: 85vh;
 		background-size: cover !important;
 		background-position: center;
 	}
@@ -406,8 +405,23 @@ hr {
 	#containerIconsMenu {
 		width: 50%;
 	}
+	.buttonHeaderBorse {
+		transform: translateX(0%) translateY(-80px) !important;
+	}
+	#borseHeader {
+		transform: translateY(0px) !important;
+	}
 	.buttonHeaderBorse #borseHeader + div {
-		transform: translateX(-30%) translateY(-20px) !important;
+		transform: translateX(-35%) !important;
+		padding: 4%;
+	}
+
+	.animationForMobile {
+		font-size: smaller;
+		transform: translateY(3em);
+		margin-top: 0%;
+		opacity: 0;
+		animation: upDownButtonHeader 2s ease 2s infinite alternate-reverse;
 	}
 
 	#sectionMW {
@@ -416,12 +430,25 @@ hr {
 	}
 
 	.cardMW {
-		width: 100% !important;
-		height: 30em !important;
+		width: 98%;
+		height: 64vh;
+		margin-left: 1%;
+	}
+	/*contener of img cardMW*/
+	.section-ContainerMW {
+		cursor: pointer;
+		height: 64vh;
+		overflow: hidden;
+	}
+
+	.section-ContainerMW img {
+		object-fit: cover;
+		width: 100%;
+		height: 64vh;
 	}
 
 	.containerSectionFirst {
-		transform: translateY(-150px);
+		transform: translateY(5%);
 	}
 
 	.featured {
@@ -448,11 +475,9 @@ hr {
 		width: 100vw !important;
 		overflow: hidden;
 		padding-left: 0px !important;
-		/*border: solid 5px rgb(85, 165, 0);*/
 	}
 
 	figure {
-		/*border: solid 2px rgb(234, 0, 255);*/
 		width: 70vw !important;
 		margin-right: 0px !important;
 	}
@@ -462,11 +487,11 @@ hr {
 	}
 
 	figure:nth-child(2) {
-		transform: translateX(-180px);
+		transform: translateX(-45%);
 	}
 	figure video {
 		width: 100% !important;
-		height: 60vh !important;
+		height: 40vh !important;
 		object-fit: cover;
 	}
 	figcaption {
@@ -487,35 +512,51 @@ hr {
 	}
 
 	#gucciFooter {
-		font-size: 80pt;
+		font-size: 60pt;
 		letter-spacing: 15px;
+	}
+}
+
+/*animation for up and down of buttone on the haeder -Only for mobile*/
+@keyframes upDownButtonHeader {
+	0% {
+		transform: translateY(3em);
+		margin-top: 0%;
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(1em);
+		margin-top: 2%;
+		opacity: 9;
 	}
 }
 
 /*Animation logo mobile*/
 @keyframes animationLogoForMobile {
 	0% {
-		color: var(--colorTheme1);
-		transform: scale(45%);
+		color: white;
+		transform: scale(40%);
 		letter-spacing: 35px;
-		top: -5% !important;
-		left: -50vw !important;
+		top: -3% !important;
+		left: -68% !important;
 	}
 	100% {
-		color: var(--colorTheme2);
+		color: black;
 		transform: scale(14%) translateY(-220%) translateX(-80%);
 		letter-spacing: 15px;
+		padding-left: 8%;
 	}
 }
 
 @keyframes logoAnimationReverseoForMobile {
 	0% {
-		color: var(--colorTheme2);
+		color: black;
 		transform: scale(14%) translateY(-220%) translateX(-80%);
 		letter-spacing: 15px;
+		padding-left: 8%;
 	}
 	100% {
-		color: var(--colorTheme1);
+		color: white;
 		font-size: 200pt;
 	}
 }
