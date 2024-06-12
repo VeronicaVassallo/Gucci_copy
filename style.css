@@ -1,5 +1,6 @@
 :root {
-	--bg-footer: black;
+	--colorTheme1: white;
+	--colorTheme2: black;
 }
 
 * {
@@ -14,10 +15,10 @@
 #nav {
 	width: 100vw;
 	top: 0px;
-	z-index: 1051;
+	z-index: 1053;
 }
 #logo {
-	color: white;
+	color: var(--colorTheme1);
 	font-size: 200pt;
 	letter-spacing: 90px;
 	transform: scaleX(115%);
@@ -44,7 +45,7 @@
 /* The animation code */
 @keyframes animationLogo {
 	0% {
-		color: white;
+		color: var(--colorTheme1);
 		font-size: 200pt;
 		letter-spacing: 90px;
 		top: 0%;
@@ -52,7 +53,7 @@
 	}
 
 	100% {
-		color: black;
+		color: var(--colorTheme2);
 		font-size: 20pt;
 		letter-spacing: 10px;
 		top: 2%;
@@ -62,7 +63,7 @@
 
 @keyframes animationLogoReverse {
 	0% {
-		color: black;
+		color: var(--colorTheme2);
 		font-size: 20pt;
 		letter-spacing: 10px;
 		top: 2%;
@@ -70,7 +71,7 @@
 	}
 
 	100% {
-		color: white;
+		color: var(--colorTheme1);
 		font-size: 200pt;
 		letter-spacing: 90px;
 		top: 0%;
@@ -79,7 +80,7 @@
 }
 
 .bg-white {
-	background-color: white !important;
+	background-color: var(--colorTheme1) !important;
 	animation: opacityBG 2s ease-in forwards;
 }
 
@@ -245,7 +246,7 @@ video {
 
 /*Footer*/
 footer {
-	background-color: black;
+	background-color: var(--colorTheme2);
 	overflow: hidden;
 	font-size: 9pt;
 }
@@ -271,10 +272,10 @@ hr {
 }
 /*collapsed section start */
 .bg-footer {
-	background-color: var(--bg-footer);
+	background-color: var(--colorTheme2);
 }
 .buttonCollapse {
-	border-bottom: solid 1px white;
+	border-bottom: solid 1px var(--colorTheme1);
 	padding-bottom: 20px;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -494,14 +495,14 @@ hr {
 /*Animation logo mobile*/
 @keyframes animationLogoForMobile {
 	0% {
-		color: white;
+		color: var(--colorTheme1);
 		transform: scale(45%);
 		letter-spacing: 35px;
 		top: -5% !important;
 		left: -50vw !important;
 	}
 	100% {
-		color: black;
+		color: var(--colorTheme2);
 		transform: scale(14%) translateY(-220%) translateX(-80%);
 		letter-spacing: 15px;
 	}
@@ -509,12 +510,12 @@ hr {
 
 @keyframes logoAnimationReverseoForMobile {
 	0% {
-		color: black;
+		color: var(--colorTheme2);
 		transform: scale(14%) translateY(-220%) translateX(-80%);
 		letter-spacing: 15px;
 	}
 	100% {
-		color: white;
+		color: var(--colorTheme1);
 		font-size: 200pt;
 	}
 }
