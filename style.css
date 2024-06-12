@@ -10,7 +10,7 @@
 #nav {
 	width: 100vw;
 	top: 0px;
-	z-index: 1051;
+	z-index: 1053;
 }
 #logo {
 	color: white;
@@ -20,7 +20,7 @@
 	opacity: 0.8;
 	position: fixed;
 	top: 0%;
-	left: 10%;
+	left: 15%;
 	font-family: "Garamond";
 	z-index: 1052;
 }
@@ -44,7 +44,8 @@
 		font-size: 180pt;
 		letter-spacing: 90px;
 		top: 0%;
-		left: 10%;
+		left: 15%;
+		z-index: 1052;
 	}
 
 	100% {
@@ -53,6 +54,7 @@
 		letter-spacing: 10px;
 		top: 2%;
 		left: 45%;
+		z-index: 1054;
 	}
 }
 
@@ -63,6 +65,7 @@
 		letter-spacing: 10px;
 		top: 2%;
 		left: 45%;
+		z-index: 1054;
 	}
 
 	100% {
@@ -70,7 +73,8 @@
 		font-size: 180pt;
 		letter-spacing: 90px;
 		top: 0%;
-		left: 10%;
+		left: 15%;
+		z-index: 1052;
 	}
 }
 
@@ -90,7 +94,7 @@
 	}
 }
 .gucci_header {
-	width: 100%;
+	width: 100vw;
 	height: 110vh;
 	background-image: url("assets/header.jpg");
 	background-repeat: no-repeat;
@@ -370,12 +374,13 @@ hr {
 }
 
 /*media query mobile version*/
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
 	#logo {
 		transform: scale(40%);
 		letter-spacing: 35px;
 		top: -3% !important;
 		left: -68% !important;
+		z-index: 1052;
 	}
 	.menu {
 		display: none;
@@ -392,6 +397,202 @@ hr {
 
 	.logoAnimationReverse {
 		animation-name: animationLogoReverseForMobile;
+		animation-duration: 0.7s;
+		animation-fill-mode: forwards;
+	}
+
+	.gucci_header {
+		height: 85vh;
+		background-size: cover !important;
+		background-position: center;
+	}
+
+	#containerIconsMenu {
+		width: 50%;
+	}
+	.buttonHeaderBorse {
+		transform: translateX(0%) translateY(-80px) !important;
+	}
+	#borseHeader {
+		transform: translateY(0px) !important;
+	}
+	.buttonHeaderBorse #borseHeader + div {
+		transform: translateX(-35%) !important;
+		padding: 4%;
+	}
+
+	.animationForMobile {
+		font-size: smaller;
+		transform: translateY(3em);
+		margin-top: 0%;
+		opacity: 0;
+		animation: upDownButtonHeader 2s ease 2s infinite alternate-reverse;
+	}
+
+	#sectionMW {
+		display: flex !important;
+		flex-direction: column;
+	}
+
+	.cardMW {
+		width: 98%;
+		height: 64vh;
+		margin-left: 1%;
+	}
+	/*contener of img cardMW*/
+	.section-ContainerMW {
+		cursor: pointer;
+		height: 64vh;
+		overflow: hidden;
+	}
+
+	.section-ContainerMW img {
+		object-fit: cover;
+		width: 100%;
+		height: 64vh;
+	}
+
+	.containerSectionFirst {
+		transform: translateY(5%);
+	}
+
+	.featured {
+		transform: translateY(80px);
+		padding-bottom: 6%;
+	}
+	.containerRestoNiente {
+		width: 100% !important;
+		margin: 10px !important;
+	}
+	.containerRestoNienteText {
+		width: 100% !important;
+		padding-top: 8% !important;
+	}
+	.containerRestoNienteText p {
+		width: 100%;
+		padding: 0px 13px;
+	}
+	#containerVideos {
+		width: 300vw !important;
+		overflow: hidden;
+	}
+	section:last-of-type {
+		width: 100vw !important;
+		overflow: hidden;
+		padding-left: 0px !important;
+	}
+
+	figure {
+		width: 70vw !important;
+		margin-right: 0px !important;
+	}
+
+	figure:first-of-type {
+		transform: translateX(-50px);
+	}
+
+	figure:nth-child(2) {
+		transform: translateX(-45%);
+	}
+	figure video {
+		width: 100% !important;
+		height: 40vh !important;
+		object-fit: cover;
+	}
+	figcaption {
+		text-align: left;
+		width: 90%;
+	}
+
+	footer .listFooter {
+		display: none;
+	}
+
+	.flex-size:last-of-type {
+		width: 100% !important;
+	}
+	.containerBrands {
+		padding-left: 10px !important;
+	}
+
+	#gucciFooter {
+		font-size: 60pt;
+		letter-spacing: 15px;
+	}
+}
+
+/*animation for up and down of buttone on the haeder -Only for mobile*/
+@keyframes upDownButtonHeader {
+	0% {
+		transform: translateY(3em);
+		margin-top: 0%;
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(1em);
+		margin-top: 2%;
+		opacity: 9;
+	}
+}
+
+/*Animation logo mobile*/
+@keyframes animationLogoForMobile {
+	0% {
+		color: white;
+		transform: scale(40%);
+		letter-spacing: 35px;
+		top: -3% !important;
+		left: -20% !important;
+		z-index: 1052;
+	}
+	100% {
+		color: black;
+		transform: scale(14%) translateY(-220%) translateX(-80%);
+		letter-spacing: 15px;
+		padding-left: 8%;
+		z-index: 1054;
+	}
+}
+
+@keyframes logoAnimationReverseoForMobile {
+	0% {
+		color: black;
+		transform: scale(14%) translateY(-220%) translateX(-80%);
+		letter-spacing: 15px;
+		padding-left: 8%;
+		z-index: 1054;
+	}
+	100% {
+		color: white;
+		font-size: 200pt;
+		z-index: 1052;
+	}
+}
+
+/*Media query per Ipad*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	#logo {
+		transform: scale(70%);
+		letter-spacing: 35px;
+		top: -3% !important;
+		left: -20% !important;
+		z-index: 1052;
+	}
+	.menu {
+		display: none;
+	}
+	#contact {
+		visibility: hidden !important;
+	}
+
+	.logoAnimation {
+		animation-name: animationLogoForIPad;
+		animation-duration: 0.7s;
+		animation-fill-mode: forwards;
+	}
+
+	.logoAnimationReverse {
+		animation-name: logoAnimationReverseoForIPad;
 		animation-duration: 0.7s;
 		animation-fill-mode: forwards;
 	}
@@ -517,46 +718,34 @@ hr {
 	}
 }
 
-/*animation for up and down of buttone on the haeder -Only for mobile*/
-@keyframes upDownButtonHeader {
-	0% {
-		transform: translateY(3em);
-		margin-top: 0%;
-		opacity: 0;
-	}
-	100% {
-		transform: translateY(1em);
-		margin-top: 2%;
-		opacity: 9;
-	}
-}
-
-/*Animation logo mobile*/
-@keyframes animationLogoForMobile {
+/*Animation logo IPad*/
+@keyframes animationLogoForIPad {
 	0% {
 		color: white;
-		transform: scale(40%);
+		transform: scale(70%);
 		letter-spacing: 35px;
 		top: -3% !important;
-		left: -68% !important;
+		left: -20% !important;
+		z-index: 1052;
 	}
 	100% {
 		color: black;
-		transform: scale(14%) translateY(-220%) translateX(-80%);
+		transform: scale(14%) translateY(-220%) translateX(-170%);
 		letter-spacing: 15px;
-		padding-left: 8%;
+		z-index: 1054;
 	}
 }
 
-@keyframes logoAnimationReverseoForMobile {
+@keyframes logoAnimationReverseoForIPad {
 	0% {
 		color: black;
-		transform: scale(14%) translateY(-220%) translateX(-80%);
+		transform: scale(14%) translateY(-220%) translateX(-170%);
 		letter-spacing: 15px;
-		padding-left: 8%;
+		z-index: 1054;
 	}
 	100% {
 		color: white;
 		font-size: 200pt;
+		z-index: 1052;
 	}
 }
