@@ -10,3 +10,8 @@
 	cursor: pointer;
 	z-index: 1059;
 }
+
+.border-bottom {
+	border-bottom: solid 1px black;
+	padding-bottom: 0px !important;
+}

@@ -63,6 +63,23 @@
 	width: 45px;
 	height: 45px;
 }
+
+.searchBox {
+	top: 8.5%;
+	right: 8%;
+	width: 48%;
+	height: 80%;
+	z-index: 1062;
+}
+.searchBox input {
+	border: 0px;
+	border-bottom: 1px solid black;
+	width: 31em !important;
+}
+.searchBox ul li {
+	list-style: none;
+}
+
 .logoAnimation {
 	animation-name: animationLogo;
 	animation-duration: 0.7s;
@@ -214,6 +231,17 @@
 		top: -85%;
 		right: -85%;
 	}
+	.searchBox {
+		top: 8.3%;
+		right: 0%;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+	}
+	.searchBox input {
+		width: 20em !important;
+	}
+
 	#contact {
 		visibility: hidden !important;
 	}
