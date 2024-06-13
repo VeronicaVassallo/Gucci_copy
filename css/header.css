@@ -135,7 +135,7 @@
 .gucci_header {
 	width: 100%;
 	height: 100vh;
-	background-image: url("header.jpg");
+	background-image: url("/assets/header.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	animation: dezoom 2s ease forwards;
