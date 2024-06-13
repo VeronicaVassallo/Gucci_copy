@@ -20,7 +20,7 @@
 	font-size: 8pt;
 	padding-top: 2px;
 }
-/*TO DO: this "showMenuOpened" class you have to add body with js*/
+/*this "showMenuOpened" class is added to containerMenuOpened with js*/
 .showMenuOpened {
 	width: 100vw;
 	height: 100vh !important;
