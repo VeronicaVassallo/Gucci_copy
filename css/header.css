@@ -8,7 +8,6 @@
 	color: white;
 	font-size: 180pt;
 	letter-spacing: 90px;
-	transform: scaleX(115%);
 	opacity: 0.8;
 	position: fixed;
 	top: 0%;
@@ -202,7 +201,7 @@
 		transform: scale(40%);
 		letter-spacing: 35px;
 		top: -3% !important;
-		left: -68% !important;
+		left: -1.1em !important;
 		z-index: 1052;
 	}
 	.menu {
