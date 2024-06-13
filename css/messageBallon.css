@@ -1,0 +1,72 @@
+/*Message balloon*/
+.message {
+	width: 100px;
+	height: 100px;
+	z-index: 1060;
+	position: fixed;
+	opacity: 0;
+	top: 80vh;
+	right: 0vh;
+	animation: showBalloon 1s ease-in 3s forwards;
+	cursor: pointer;
+}
+
+.circle {
+	width: 70px;
+	height: 70px;
+	background-color: #1b1b1b;
+	border-radius: 50%;
+	box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+}
+.triangle-top-right {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 20px 20px 0;
+	border-color: transparent #1b1b1b transparent transparent;
+	transform: translate(45px, -15px) rotate(-20deg);
+}
+
+@keyframes showBalloon {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	50% {
+		opacity: 12;
+		transform: translateX(-4px);
+	}
+	75% {
+		opacity: 12;
+		transform: translateX(5px);
+	}
+	100% {
+		opacity: 12;
+		transform: translateX(0);
+	}
+}
+
+#slide1 {
+	position: relative;
+	right: 20px;
+	top: 17px;
+	opacity: 9;
+	animation: moveToLeft 10s ease 2ms infinite;
+}
+#slide2 {
+	position: relative;
+	right: 85px;
+	top: 15px;
+	opacity: 0;
+	animation: moveToLeftCC 5s ease 1ms infinite;
+}
+
+@keyframes moveToLeft {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 9;
+	}
+}
