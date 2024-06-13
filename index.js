@@ -1,6 +1,9 @@
 const nav = document.getElementById("nav");
 const plusContact = document.getElementById("contact");
 const logo = document.getElementById("logo");
+const containerMenuOpened = document.getElementById("containerMenuOpened");
+const menuOpened = document.getElementById("menuOpened");
+const body = document.getElementsByTagName("body")[0];
 
 //Function onScroll add e remove class
 const toggleClassNav = () => {
@@ -22,3 +25,10 @@ const toggleClassNav = () => {
 };
 
 window.addEventListener("scroll", toggleClassNav);
+
+//Function show menu opened
+const openMenu = () => {
+	containerMenuOpened.classList.toggle("showMenuOpened");
+	menuOpened.classList.toggle("d-none");
+	body.classList.toggle("hiddenOverflow");
+};
