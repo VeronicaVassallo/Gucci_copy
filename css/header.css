@@ -347,6 +347,13 @@
 		display: none;
 	}
 
+	.searchBox {
+		top: 4.5%;
+	}
+	.searchBox input {
+		width: 15em !important;
+	}
+
 	#contact {
 		visibility: hidden !important;
 	}
