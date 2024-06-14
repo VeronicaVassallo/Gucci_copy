@@ -79,6 +79,10 @@
 .searchBox ul li {
 	list-style: none;
 }
+.sizeImg {
+	width: 110px;
+	height: 110px;
+}
 
 .logoAnimation {
 	animation-name: animationLogo;
@@ -239,7 +243,7 @@
 		overflow: hidden;
 	}
 	.searchBox input {
-		width: 20em !important;
+		width: 15em !important;
 	}
 
 	#contact {
